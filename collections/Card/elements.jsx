@@ -1,7 +1,9 @@
 import styled from 'styled-components';
 import {
-    SectionContainer,
-  } from '~/components';
+  SectionContainer,
+  SectionSubheading,
+  SectionParagraph,
+} from '~/components';
 
 export const StyledContainer = styled(
   ({ height, variant = 'contained', color = 'main', ...props }) => (
@@ -10,4 +12,59 @@ export const StyledContainer = styled(
 )`
   align-items: center;
   background-color: #f9f9f9;
+  display: flex;
+  flex-direction: row;
+  width: 85%;
+  height: 7.5rem;
+  margin: 1rem;
+  padding: 1rem;
+  border-radius: 10px;
+
+  &:hover {
+    cursor: pointer;
+    border: 2px solid #00bfff;
+    width: 90%;
+
+    h3 {
+      text-decoration: underline;
+      color: #00bfff;
+    }
+  }
+`;
+
+export const StyledTextContainer = styled(({ ...props }) => <div {...props} />)`
+  color: black;
+  font-family: sans-serif;
+  display: flex;
+  flex-direction: column;
+  margin: 2rem;
+  width: 65%;
+`;
+
+export const StyledImageContainer = styled(({ ...props }) => (
+  <div {...props} />
+))`
+  margin: 1rem;
+`;
+
+export const StyledLogo = styled(({ ...props }) => <div {...props} />)`
+  svg {
+    width: 2.5rem;
+    height: 2.5rem;
+  }
+`;
+
+export const StyledHeading = styled(({ height, ...props }) => (
+  <SectionSubheading {...props} />
+))`
+  color: black;
+  margin: 0;
+  font-weight: 600;
+`;
+
+export const StyledParagraph = styled(({ height, ...props }) => (
+  <SectionParagraph {...props} />
+))`
+  color: black;
+  margin: 0;
 `;
