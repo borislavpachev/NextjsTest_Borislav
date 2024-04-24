@@ -40,23 +40,25 @@ export const StyledInnerContainer = styled(({ ...props }) => (
   <div {...props} />
 ))`
   display: flex;
-  flex-direction: row;
   align-items: center;
   margin: 2rem;
   width: 60%;
+
+  @media (max-width: 1023px) {
+    flex-direction: column;
+  }
 `;
 
 export const StyledImageContainer = styled(({ ...props }) => (
   <div {...props} />
 ))`
-  width: 40%;
+  width: 80%;
   height: 100%;
   margin-right: 4rem;
 `;
 
 export const StyledCardContainer = styled(({ ...props }) => <div {...props} />)`
-  width: 60%;
-  height: 100%;
+  width: 100%;
   display: flex;
   flex-direction: column;
 `;
@@ -67,3 +69,4 @@ export const StyledParagraph = styled(({ height, ...props }) => (
   color: black;
   margin: 0;
 `;
+
