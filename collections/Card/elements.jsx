@@ -1,9 +1,5 @@
 import styled from 'styled-components';
-import {
-  SectionContainer,
-  SectionSubheading,
-  SectionParagraph,
-} from '~/components';
+import { SectionContainer, SectionSubheading } from '~/components';
 
 export const StyledContainer = styled(
   ({ height, variant = 'contained', color = 'main', ...props }) => (
@@ -62,9 +58,8 @@ export const StyledHeading = styled(({ height, ...props }) => (
   font-weight: 600;
 `;
 
-export const StyledParagraph = styled(({ height, ...props }) => (
-  <SectionParagraph {...props} />
+export const StyledParagraphContainer = styled(({ ...props }) => (
+  <div {...props} />
 ))`
-  color: black;
   margin: 0;
 `;
