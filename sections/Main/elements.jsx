@@ -20,7 +20,6 @@ export const StyledTextContainer = styled(({ ...props }) => <div {...props} />)`
   color: black;
   width: 50%;
   font-family: sans-serif;
-  margin: 0.5rem;
   align-items: center;
   display: flex;
   flex-direction: column;
@@ -43,7 +42,8 @@ export const StyledInnerContainer = styled(({ ...props }) => (
   display: flex;
   flex-direction: row;
   align-items: center;
-  margin: 3rem;
+  margin: 2rem;
+  width: 60%;
 `;
 
 export const StyledImageContainer = styled(({ ...props }) => (
