@@ -11,7 +11,7 @@ export const StyledContainer = styled(
   display: flex;
   flex-direction: row;
   width: 90%;
-  height: 8.5rem;
+  height: 100%;
   margin: 1rem;
   padding: 1rem;
   border-radius: 10px;
@@ -33,20 +33,19 @@ export const StyledTextContainer = styled(({ ...props }) => <div {...props} />)`
   font-family: sans-serif;
   display: flex;
   flex-direction: column;
-  margin: 2rem;
-  width: 65%;
+  margin: 1.5rem;
 `;
 
 export const StyledImageContainer = styled(({ ...props }) => (
   <div {...props} />
 ))`
-  margin: 1rem;
+  margin: 0;
 `;
 
 export const StyledLogo = styled(({ ...props }) => <div {...props} />)`
   svg {
-    width: 2.5rem;
-    height: 2.5rem;
+    min-width: 2.5rem;
+    min-height: 2.5rem;
   }
 `;
 
@@ -61,5 +60,5 @@ export const StyledHeading = styled(({ height, ...props }) => (
 export const StyledParagraphContainer = styled(({ ...props }) => (
   <div {...props} />
 ))`
-  margin: 0;
+  margin: 0;  
 `;
