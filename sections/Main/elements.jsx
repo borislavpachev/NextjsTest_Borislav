@@ -23,17 +23,29 @@ export const StyledTextContainer = styled(({ ...props }) => <div {...props} />)`
   align-items: center;
   display: flex;
   flex-direction: column;
+
+  @media (max-width: 1023px) {
+    width: 100%;
+  }
 `;
 
 export const StyledTitle = styled((props) => <SectionBigHeading {...props} />)`
   margin: 0;
   color: black;
+
+  @media (max-width: 1023px) {
+   font-size: 1.5rem;
+  }
 `;
 
 export const StyledDescription = styled((props) => (
   <SectionSubheading {...props} />
 ))`
   margin: 0;
+
+  @media (max-width: 1023px) {
+    font-size: 1rem;
+   }
 `;
 
 export const StyledInnerContainer = styled(({ ...props }) => (
@@ -46,6 +58,7 @@ export const StyledInnerContainer = styled(({ ...props }) => (
 
   @media (max-width: 1023px) {
     flex-direction: column;
+    width: 100%;
   }
 `;
 
