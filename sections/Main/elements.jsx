@@ -14,6 +14,11 @@ export const StyledContainer = styled(({ height, ...props }) => (
   display: flex;
   flex-direction: column;
   background-image: url('/img/background.png');
+
+  @media (max-width: 1023px) {
+    width: 100%;
+    align-items: center;
+  }
 `;
 
 export const StyledTextContainer = styled(({ ...props }) => <div {...props} />)`
