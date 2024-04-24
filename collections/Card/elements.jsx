@@ -11,9 +11,9 @@ export const StyledContainer = styled(
   display: flex;
   flex-direction: row;
   width: 90%;
-  height: 100%;
+  height: 80%;
   margin: 1rem;
-  padding: 1rem;
+  padding: 0 0.5rem;
   border-radius: 10px;
 
   &:hover {
