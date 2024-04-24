@@ -13,8 +13,8 @@ const mainProps = {
   image: {
     src: '/img/video.png',
     alt: 'video',
-    width: 150,
-    height: 230,
+    width: 300,
+    height: 460,
   },
   title: 'Managed agency selection',
   description: 'Strengthen your onboarding process',

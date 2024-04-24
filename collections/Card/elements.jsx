@@ -10,8 +10,8 @@ export const StyledContainer = styled(
   background-color: #f9f9f9;
   display: flex;
   flex-direction: row;
-  width: 85%;
-  height: 7.5rem;
+  width: 90%;
+  height: 8.5rem;
   margin: 1rem;
   padding: 1rem;
   border-radius: 10px;
@@ -19,7 +19,7 @@ export const StyledContainer = styled(
   &:hover {
     cursor: pointer;
     border: 2px solid #00bfff;
-    width: 90%;
+    width: 100%;
 
     h3 {
       text-decoration: underline;
