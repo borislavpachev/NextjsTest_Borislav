@@ -1,11 +1,9 @@
 import styled from 'styled-components';
 import { SectionContainer, SectionSubheading } from '~/components';
 
-export const StyledContainer = styled(
-  ({ height, variant = 'contained', color = 'main', ...props }) => (
-    <SectionContainer {...props} />
-  )
-)`
+export const StyledContainer = styled(({ height, ...props }) => (
+  <SectionContainer {...props} />
+))`
   align-items: center;
   background-color: #f9f9f9;
   display: flex;
@@ -60,5 +58,5 @@ export const StyledHeading = styled(({ height, ...props }) => (
 export const StyledParagraphContainer = styled(({ ...props }) => (
   <div {...props} />
 ))`
-  margin: 0;  
+  margin: 0;
 `;

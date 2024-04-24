@@ -10,7 +10,7 @@ export const StyledContainer = styled(({ height, ...props }) => (
   <SectionContainer {...props} />
 ))`
   align-items: center;
-  margin-top: 4rem;
+  margin-top: 3rem;
   display: flex;
   flex-direction: column;
   background-image: url('/img/background.png');
@@ -41,8 +41,8 @@ export const StyledInnerContainer = styled(({ ...props }) => (
 ))`
   display: flex;
   align-items: center;
-  margin: 2rem;
-  width: 60%;
+  margin: 1rem;
+  width: 55%;
 
   @media (max-width: 1023px) {
     flex-direction: column;
@@ -54,7 +54,7 @@ export const StyledImageContainer = styled(({ ...props }) => (
 ))`
   width: 80%;
   height: 100%;
-  margin: 3rem;
+  margin: 2rem;
 `;
 
 export const StyledCardContainer = styled(({ ...props }) => <div {...props} />)`
