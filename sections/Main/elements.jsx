@@ -54,7 +54,7 @@ export const StyledImageContainer = styled(({ ...props }) => (
 ))`
   width: 80%;
   height: 100%;
-  margin-right: 4rem;
+  margin: 2rem;
 `;
 
 export const StyledCardContainer = styled(({ ...props }) => <div {...props} />)`
