@@ -1,1 +1,5 @@
-// The Card to be exported goes here
+import { StyledContainer } from '../Card/elements';
+
+export const Card = ({ logo, title, text }) => {
+  return <StyledContainer></StyledContainer>;
+};
