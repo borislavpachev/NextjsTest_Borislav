@@ -1,10 +1,22 @@
-import { Hero } from "../sections";
+import { Hero } from '../sections';
+import { Main } from '../sections/Main/Main';
 
 const heroProps = {
-  image: { src: "/img/heroimg.png", alt: "", width: 1000, height: 1680 },
-  title: "Agency procurement, outsourced.",
-  description: "Start the process here",
-  ctaText: "Start",
+  image: { src: '/img/heroimg.png', alt: '', width: 1000, height: 1680 },
+  title: 'Agency procurement, outsourced.',
+  description: 'Start the process here',
+  ctaText: 'Start',
+};
+
+const mainProps = {
+  image: {
+    src: '/img/video.png',
+    alt: 'video',
+    width: 150,
+    height: 230,
+  },
+  title: 'Managed agency selection',
+  description: 'Strengthen your onboarding process',
 };
 
 export default function Home() {
@@ -20,7 +32,7 @@ export default function Home() {
       </head>
       <div>
         <Hero {...heroProps} />
-        {/** Other sections */}
+        <Main {...mainProps} />
       </div>
     </>
   );
