@@ -26,6 +26,7 @@ export const StyledTextContainer = styled(({ ...props }) => <div {...props} />)`
 
   @media (max-width: 1023px) {
     width: 100%;
+    align-items: center;
   }
 `;
 
@@ -34,7 +35,7 @@ export const StyledTitle = styled((props) => <SectionBigHeading {...props} />)`
   color: black;
 
   @media (max-width: 1023px) {
-   font-size: 1.5rem;
+    font-size: 1.5rem;
   }
 `;
 
@@ -45,7 +46,7 @@ export const StyledDescription = styled((props) => (
 
   @media (max-width: 1023px) {
     font-size: 1rem;
-   }
+  }
 `;
 
 export const StyledInnerContainer = styled(({ ...props }) => (
@@ -58,6 +59,7 @@ export const StyledInnerContainer = styled(({ ...props }) => (
 
   @media (max-width: 1023px) {
     flex-direction: column;
+    align-items: center;
     width: 100%;
   }
 `;
@@ -82,4 +84,3 @@ export const StyledParagraph = styled(({ height, ...props }) => (
   color: black;
   margin: 0;
 `;
-
