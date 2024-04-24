@@ -33,7 +33,7 @@ export const StyledTextContainer = styled(({ ...props }) => <div {...props} />)`
   font-family: sans-serif;
   display: flex;
   flex-direction: column;
-  margin: 1.5rem;
+  margin: 2rem;
 `;
 
 export const StyledImageContainer = styled(({ ...props }) => (
