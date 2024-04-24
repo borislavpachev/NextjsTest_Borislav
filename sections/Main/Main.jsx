@@ -23,17 +23,32 @@ const cardProps = [
   {
     logo: <FontAwesomeIcon icon={faShapes} />,
     title: 'Brief',
-    text: 1,
+    text: (
+      <StyledParagraph>
+        Complete <strong>brief writing or simple guidance</strong> on what
+        include, we`ve got you covered
+      </StyledParagraph>
+    ),
   },
   {
     logo: <FontAwesomeIcon icon={faMagnifyingGlass} />,
     title: 'Search',
-    text: 1,
+    text: (
+      <StyledParagraph>
+        In depth agency search covering; <strong>criteria matching</strong>,
+        door knocking and due-diligence vetting.`,
+      </StyledParagraph>
+    ),
   },
   {
     logo: <FontAwesomeIcon icon={faPeopleGroup} />,
     title: 'Pitch',
-    text: 1,
+    text: (
+      <StyledParagraph>
+        Comprehensive <strong>pitch management</strong>, including comms, diary
+        management and pitch hosting
+      </StyledParagraph>
+    ),
   },
 ];
 
@@ -55,8 +70,8 @@ export const Main = ({ image, title, description }) => {
           />
         </StyledImageContainer>
         <StyledCardContainer>
-          {cardProps.map((card) => (
-            <Card key={card.title} {...card} />
+          {cardProps.map((card, index) => (
+            <Card key={index} {...card} />
           ))}
         </StyledCardContainer>
       </StyledInnerContainer>
