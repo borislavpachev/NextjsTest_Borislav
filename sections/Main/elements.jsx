@@ -28,7 +28,8 @@ export const StyledTextContainer = styled(({ ...props }) => <div {...props} />)`
   align-items: center;
   display: flex;
   flex-direction: column;
-
+   margin: 1rem;
+ 
   @media (max-width: 1023px) {
     width: 100%;
     align-items: center;
@@ -80,6 +81,7 @@ export const StyledCardContainer = styled(({ ...props }) => <div {...props} />)`
   width: 100%;
   display: flex;
   flex-direction: column;
+  margin: 2rem;
 
   @media (max-width: 1023px) {
     align-items: center;
