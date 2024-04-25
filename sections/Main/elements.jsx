@@ -59,7 +59,8 @@ export const StyledInnerContainer = styled(({ ...props }) => (
 ))`
   display: flex;
   align-items: center;
-    width: 60%;
+  width: 60%;
+  margin: 0;
 
   @media (max-width: 1023px) {
     flex-direction: column;
@@ -78,8 +79,12 @@ export const StyledImageContainer = styled(({ ...props }) => (
 export const StyledCardContainer = styled(({ ...props }) => <div {...props} />)`
   width: 100%;
   display: flex;
-  margin: 2rem;
   flex-direction: column;
+
+  @media (max-width: 1023px) {
+    align-items: center;
+    margin: 0;
+  }
 `;
 
 export const StyledParagraph = styled(({ height, ...props }) => (

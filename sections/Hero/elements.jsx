@@ -14,6 +14,8 @@ export const StyledGetStartedBtn = styled((props) => <Button {...props} variant=
 export const StyledTitle = styled((props) => <SectionBigHeading {...props} />)`
   margin: 0;
   color: black;
+
+ 
 `;
 
 export const StyledDescription = styled((props) => <SectionSubheading {...props} />)`
@@ -25,6 +27,11 @@ export const StyledTextContainer = styled(({ ...props }) => <div {...props} />)`
   width: 30%;
   margin-left: 11.125rem;
   font-family: sans-serif;
+
+  @media (max-width: 1023px) {
+    width: 100%;
+    margin: 0;
+  }
 `;
 
 export const StyledCTAContainer = styled(({ ...props }) => <div {...props} />)`
