@@ -1,7 +1,6 @@
 import { Hero } from '../sections';
 import { Main } from '../sections/Main/Main';
 import Head from 'next/head';
-import { StyledContainer } from './elements';
 
 const heroProps = {
   image: { src: '/img/heroimg.png', alt: 'hero', width: 1000, height: 1680 },
@@ -32,10 +31,10 @@ export default function Home() {
           rel="stylesheet"
         />
       </Head>
-      <StyledContainer>
+      <div>
         <Hero {...heroProps} />
         <Main {...mainProps} />
-      </StyledContainer>
+      </div>
     </>
   );
 }
